@@ -7,7 +7,6 @@ A plugin made for admins making them able to create time trials for players.
 `timetrial create` - Creates a new time trial (Coming)  
 `timetrial set` - Sets the information on an existing time trial (Coming)  
 `timetrial remove` - Removes an existing time trial (Coming)  
-`timetrial edit` - Edits an existing time trial (Coming)  
 
 
 ### Permissions
