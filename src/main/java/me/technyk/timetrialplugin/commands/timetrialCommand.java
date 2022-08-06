@@ -55,19 +55,31 @@ public class timetrialCommand implements CommandExecutor {
                 player.sendMessage(ChatColor.GOLD + "/timetrial help " + ChatColor.YELLOW + "- Zobrazí pomoc s příkazy");
                 player.sendMessage(ChatColor.GOLD + "/timetrial create <název> " + ChatColor.YELLOW + "- Vytvoří nový time trial tam kde stojíš");
                 player.sendMessage(ChatColor.GOLD + "/timetrial set <id> end " + ChatColor.YELLOW + "- Nastaví konec time trialu tam kde stojíš");
-                player.sendMessage(ChatColor.GOLD + "/timetrial set <id> time <sekundy>" + ChatColor.YELLOW + "- Nastaví limit pro dokončení time trialu");
-                player.sendMessage(ChatColor.GOLD + "/timetrial set <id> info <text>" + ChatColor.YELLOW + "- Nastaví info pro time trial");
-                player.sendMessage(ChatColor.GOLD + "/timetrial set <id> reward add <příkaz>" + ChatColor.YELLOW + "- Přidá příkaz jako odměnu za dokončení time trialu (%plr% pro jméno hráče)");
-                player.sendMessage(ChatColor.GOLD + "/timetrial set <id> reward list" + ChatColor.YELLOW + "- Vypíše veškeré odměnové příkazy time trialu a jejich id");
-                player.sendMessage(ChatColor.GOLD + "/timetrial set <id> reward remove <id příkazu>" + ChatColor.YELLOW + "- Odebere odměnový příkaz");
-                player.sendMessage(ChatColor.GOLD + "/timetrial list" + ChatColor.YELLOW + "- Vypíše všechny time trialy a jejich pozice");
-                player.sendMessage(ChatColor.GOLD + "/timetrial remove <id>" + ChatColor.YELLOW + "- Odebere time trial");
-                player.sendMessage(ChatColor.GOLD + "/timetrial refresh" + ChatColor.YELLOW + "- Opraví všechny time trialy");
+                player.sendMessage(ChatColor.GOLD + "/timetrial set <id> time <sekundy> " + ChatColor.YELLOW + "- Nastaví limit pro dokončení time trialu");
+                player.sendMessage(ChatColor.GOLD + "/timetrial set <id> info <text> " + ChatColor.YELLOW + "- Nastaví info pro time trial");
+                player.sendMessage(ChatColor.GOLD + "/timetrial set <id> reward add <příkaz> " + ChatColor.YELLOW + "- Přidá příkaz jako odměnu za dokončení time trialu (%plr% pro jméno hráče)");
+                player.sendMessage(ChatColor.GOLD + "/timetrial set <id> reward list " + ChatColor.YELLOW + "- Vypíše veškeré odměnové příkazy time trialu a jejich id");
+                player.sendMessage(ChatColor.GOLD + "/timetrial set <id> reward remove <id příkazu> " + ChatColor.YELLOW + "- Odebere odměnový příkaz");
+                player.sendMessage(ChatColor.GOLD + "/timetrial list " + ChatColor.YELLOW + "- Vypíše všechny time trialy a jejich pozice");
+                player.sendMessage(ChatColor.GOLD + "/timetrial remove <id> " + ChatColor.YELLOW + "- Odebere time trial");
+                player.sendMessage(ChatColor.GOLD + "/timetrial refresh " + ChatColor.YELLOW + "- Opraví všechny time trialy");
+
+                // `/timetrial help` - Zobrazí pomoc s příkazy
+                // `/timetrial create <název>` - Vytvoří nový time trial tam kde stojíš
+                // `/timetrial set <id> end` - Nastaví konec time trialu tam kde stojíš
+                // `/timetrial set <id> time <sekundy>` - Nastaví limit pro dokončení time trialu
+                // `/timetrial set <id> info <text>` - Nastaví info pro time trial
+                // `/timetrial set <id> reward add <příkaz>` - Přidá příkaz jako odměnu za dokončení time trialu (%plr% pro jméno hráče)
+                // `/timetrial set <id> reward list` - Vypíše veškeré odměnové příkazy time trialu a jejich id
+                // `/timetrial set <id> reward remove <id příkazu>` - Odebere odměnový příkaz
+                // `/timetrial list` - Vypíše všechny time trialy a jejich pozice
+                // `/timetrial remove <id>` - Odebere time trial
+                // `/timetrial refresh` - Opraví všechny time trialy
+
 
 
 
             case "create":
-
                 // Check if the player has the correct amount of arguments
                 if (args.length < 2) {
                     player.sendMessage(ChatColor.RED + "Nesprávný příkaz! Použijte:" + ChatColor.DARK_RED + " /timetrial create <název>");
