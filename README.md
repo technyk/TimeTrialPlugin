@@ -1,13 +1,21 @@
 # TimeTrialPlugin
-A plugin made for admins making them able to create time trials for players.
+Plugin udělaný pro administrátory serverů, udělujicí jim možnost vyrobit time trialy pro hráče.
 
 
-### Commands
-`timetrial list` - Lists all time trials created (Coming)  
-`timetrial create <name>` - Creates a new time trial  
-`timetrial set <id> <end/time/info/rewards>` - Sets the information on an existing time trial  
-`timetrial remove` - Removes an existing time trial (Coming)  
+### Příkazy
+`/timetrial help` - Zobrazí pomoc s příkazy  
+`/timetrial create <název>` - Vytvoří nový time trial tam kde stojíš  
+`/timetrial set <id> end` - Nastaví konec time trialu tam kde stojíš  
+`/timetrial set <id> time <sekundy>` - Nastaví limit pro dokončení time trialu  
+`/timetrial set <id> info <text>` - Nastaví info pro time trial  
+`/timetrial set <id> reward add <příkaz>` - Přidá příkaz jako odměnu za dokončení time trialu (%plr% pro jméno hráče)  
+`/timetrial set <id> reward list` - Vypíše veškeré odměnové příkazy time trialu a jejich id  
+`/timetrial set <id> reward remove <id příkazu>` - Odebere odměnový příkaz  
+`/timetrial list` - Vypíše všechny time trialy a jejich pozice  
+`/timetrial remove <id>` - Odebere time trial  
+`/timetrial refresh` - Opraví všechny time trialy  
 
 
-### Permissions
-`timetrial.admin` - Ability to use all commands within the plugin
+
+### Práva
+`timetrial.admin` - Právo vytvořit, nastavit a odstraňovat time trialy
