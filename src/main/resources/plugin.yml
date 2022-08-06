@@ -1,0 +1,18 @@
+name: TimeTrialPlugin
+version: '${project.version}'
+main: me.technyk.timetrialplugin.TimeTrialPlugin
+api-version: 1.18
+authors: [ technyk ]
+description: A plugin made for admins of Minecraft servers, making them able to create time trials for players
+website: www.github.com/technyk
+commands:
+  timetrial:
+    description: A general command for using the time trial plugin
+    usage: /<command> [<args>]
+    aliases: [tt]
+    permission: timetrial.admin
+    permission-message: Nemáš dostatečná opravnění na použití tohoto příkazu
+permissions:
+  timetrial.admin:
+    description: Allows you to edit, create and remove time trials
+    default: op
